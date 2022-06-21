@@ -1,0 +1,21 @@
+ext {
+    // 기본 maven repository
+    // mavenRepositoryUrl = ''
+    // 아래는 각종 dependency library 의 version 들.
+    kotlinVersion = '1.6.10'
+    springBootVersion = '2.6.8'
+    springCloudVersion = '2021.0.3'
+    jibVersion = '2.8.0'
+    queryDslVersion = '4.3.1'
+    if (branch.contains("main")) {
+        println 'MAIN branch detected'
+        doaiVersion = [
+                common       : '0.0.1'
+        ]
+    } else {
+        println "$branch branch detected"
+        doaiVersion = [
+                common       : '0.0.1'
+        ]
+    }
+}
