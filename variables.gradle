@@ -7,15 +7,4 @@ ext {
     springCloudVersion = '2021.0.3'
     jibVersion = '2.8.0'
     queryDslVersion = '4.3.1'
-    if (branch.contains("main")) {
-        println 'MAIN branch detected'
-        doaiVersion = [
-                common       : '0.0.1'
-        ]
-    } else {
-        println "$branch branch detected"
-        doaiVersion = [
-                common       : '0.0.1'
-        ]
-    }
 }
